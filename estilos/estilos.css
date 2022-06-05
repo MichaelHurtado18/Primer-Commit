@@ -1,0 +1,410 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+
+.dark__mode {
+    background-color: #000;
+}
+
+.dark__mode h1 {
+    color: white;
+}
+
+.dark__mode .contenedor p {
+    color: white;
+}
+
+.dark__mode .blog p {
+    color: white;
+}
+
+
+
+
+h3 {
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .contenedor {
+        margin: 0 auto;
+        width: 120rem;
+    }
+}
+
+
+/*estilos al header*/
+
+
+.header {
+    background-color: #626160;
+    margin-bottom: 5rem;
+
+}
+
+.inicio {
+    min-height: 70rem;
+    background-position: bottom center;
+    background-size: cover;
+    background-image: url(../bienesraices_inicio/src/img/header.jpg);
+}
+
+.inicio .contenedor__header {
+    min-height: 70rem;
+}
+
+.contenedor__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.header__titulo {
+    color: white;
+    text-align: left;
+    margin-left: 3rem;
+    line-height: 2;
+    max-width: 60rem;
+}
+
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.derecha {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media(min-width:768px) {
+    .derecha {
+        flex-direction: row-reverse;
+
+    }
+}
+
+@media(min-width:768px) {
+    .barra {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem 0 3rem 0;
+    }
+
+}
+
+.barra__logo {
+    width: 30rem;
+}
+
+/*estilos a la navegacion*/
+
+
+.navegacion {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    display: none;
+}
+
+
+.mostrar {
+    display: flex;
+}
+
+
+.navegacion a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+@media(min-width:768px) {
+
+    .menu__barras__mobile {
+        display: none;
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navegacion a {
+        margin-right: 2rem;
+    }
+
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.menu__barras__mobile img {
+    width: 5rem;
+}
+
+.boton__dark__mode {}
+
+.boton__dark__mode img {
+    width: 5rem;
+    filter: invert(100%);
+
+}
+
+.footer {
+    background-color: #626160;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.copyrigth {
+    color: white;
+    text-align: center;
+}
+
+
+/*Seccion nosotros*/
+
+@media(min-width:478px) {
+    .iconos__nosotros {
+        display: flex;
+    }
+}
+
+
+.icono {
+    text-align: center;
+}
+
+.icono img {
+    height: 10rem;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+
+
+
+
+/*Seccion de anuncios*/
+
+.contenedor__anuncios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+.card__anuncio {
+    background-color: #C1BEBA;
+    border-radius: 1rem;
+}
+
+.contenido__anuncio {
+    padding: 2rem;
+}
+
+.iconos__caracteristicas {
+    display: flex;
+}
+
+.iconos__caracteristicas li {
+    list-style: none;
+    flex: 1;
+    display: flex;
+}
+
+.iconos__caracteristicas img {
+    flex: 0 0 3rem;
+    margin-right: 2rem;
+}
+
+
+.precio {
+    color: #47AD18;
+}
+
+.boton__naranja {
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+    display: block;
+}
+
+
+/*seccion contacto*/
+
+.imagen__contacto {
+    background-image: url('../bienesraices_inicio/src/img/encuentra.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.contacto__parrafo {
+    color: white;
+}
+
+
+
+/*blog y testimoniales*/
+
+
+.seccion__inferior {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+
+.h3__inferior {
+    color: #000;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.dark__mode .h3__inferior {
+    color: white;
+}
+
+.entrada__blog {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.titulo__blog {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.entrada__blog a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.entrada__blog h4 {
+    font-size: 2rem;
+
+}
+
+.entrada__blog span {
+    color: orange;
+
+}
+
+.entrada__blog h4:after {
+    content: '';
+    display: block;
+    background-color: rgb(61, 228, 52);
+    width: 15rem;
+    height: .3rem;
+    margin-top: 1rem;
+}
+
+.entrada__blog:last-of-type {
+    margin-bottom: 0;
+}
+
+.testimoniales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.testimonial {
+    background-color: rgb(61, 228, 52);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-left: 10rem;
+}
+
+blockquote {
+    font-size: 2.4rem;
+    color: white;
+    border-radius: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+
+blockquote:before {
+    content: '';
+    background-image: url('../bienesraices_inicio/src/img/comilla.svg');
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    position: absolute;
+    left: -5rem;
+    top: -2rem;
+}
+
+.testimonial p {
+    text-align: right;
+    color: white;
+}
+
+
+
+
+
+/* estilos nosotros  */
+.contenido__nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.cita__nosotros {
+    color: #000;
+    margin-right: 30rem;
+}
+
+.imagen__nosotros img {
+    height: 35rem;
+    width: 50rem;
+    margin-left: 10rem;
+}
+
+.informacion__nosotros {
+    line-height: 2;
+}
+
+.titulo__nosotros {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.linea__nosotros {
+    background-color: rgb(61, 228, 52);
+}
