@@ -9,15 +9,14 @@
     <title>Bienes Raices</title>
 </head>
 
-<body>
-
+<body>  
     <body>
         <header class="header inicio">
             <div class="contenedor__header">
 
 
                 <div class="barra">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img class="barra__logo" src="../Bienes__Raices/bienesraices_inicio/src/img/logo.svg"
                             alt="Logo De la pagina" />
                     </a>
@@ -29,10 +28,10 @@
                             <img src="../Bienes__Raices/bienesraices_inicio/src/img/dark-mode.svg">
                         </div>
                         <nav class="navegacion">
-                            <a href="nosotros.html">Nosotros</a>
-                            <a href="anuncios.html">Anuncios</a>
-                            <a href="blog.html">Blog</a>
-                            <a href="contacto.html">Contacto</a>
+                            <a href="nosotros.php">Nosotros</a>
+                            <a href="anuncios.php">Anuncios</a>
+                            <a href="blog.php">Blog</a>
+                            <a href="contacto.php">Contacto</a>
                         </nav>
                     </div>
 
@@ -106,7 +105,7 @@
 
                         </ul>
 
-                        <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                        <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                     </div>
@@ -143,7 +142,7 @@
 
                         </ul>
 
-                        <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                        <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                     </div>
@@ -180,7 +179,7 @@
 
                         </ul>
 
-                        <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                        <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                     </div>
@@ -196,7 +195,7 @@
         <section class="imagen__contacto">
             <h2>Encuentra la casa de tus suenos</h2>
             <p class="contacto__parrafo"> En breve un asesor se pondra en contacto con tigo</p>
-            <a href="contacto.html" class="boton__naranja"> Contactanos</a>
+            <a href="contacto.php" class="boton__naranja"> Contactanos</a>
         </section>
 
 
@@ -211,7 +210,7 @@
                         <img src="../Bienes__Raices/bienesraices_inicio/src/img/blog1.jpg">
                     </div>
                     <div class="texto__entrada">
-                        <a href="anuncios.html">
+                        <a href="anuncios.php">
                             <h4>Terraza en el techo de tu casa</h4>
                         </a>
                         <p>Escrito el <span>20/10/2022</span> por: <span> Michael Hurtado</span></p>
@@ -228,7 +227,7 @@
                         <img src="../Bienes__Raices/bienesraices_inicio/src/img/blog1.jpg">
                     </div>
                     <div class="texto__entrada">
-                        <a href="anuncios.html">
+                        <a href="anuncios.php">
                             <h4>Terraza en el techo de tu casa</h4>
                         </a>
                         <p>Escrito el <span>20/10/2022</span> por: <span> Michael Hurtado</span></p>
@@ -254,20 +253,4 @@
         </div>
         <!--seccion de footer-->
 
-        <footer class="footer section">
-            <div class="contenedor contenedor__footer">
-                <nav class="navegacion footer">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-            <p class="copyrigth"> Todos los derechos reservador 2022 &copy;</p>
-        </footer>
-
-
-        <script src="js/app.js"></script>
-    </body>
-
-</html>
+    <?php  include 'includes/templates/footer.php';?>

@@ -1,41 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require 'includes/funciones.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Bienes Raices</title>
-</head>
-
-<body>
-    <header class="header ">
-        <div class="contenedor__header">
-            <div class="barra">
-                <a href="/">
-                    <img class="barra__logo" src="../Bienes__Raices/bienesraices_inicio/src/img/logo.svg"
-                        alt="Logo De la pagina" />
-                </a>
-                <div class="menu__barras__mobile">
-                    <img src="../Bienes__Raices/bienesraices_inicio/src/img/barras.svg">
-                </div>
-                <div class="derecha">
-                    <div class="boton__dark__mode">
-                        <img src="../Bienes__Raices/bienesraices_inicio/src/img/dark-mode.svg">
-                    </div>
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-
-        </div>
-    </header>
-
+incluirTemplates('header');
+?>
     <main class="contenedor">
         <h1>Anuncios</h1>
 
@@ -69,7 +35,7 @@
 
                     </ul>
 
-                    <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                    <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                 </div>
@@ -105,7 +71,7 @@
 
                     </ul>
 
-                    <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                    <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                 </div>
@@ -141,7 +107,7 @@
 
                     </ul>
 
-                    <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                    <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                 </div>
@@ -176,7 +142,7 @@
 
                     </ul>
 
-                    <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                    <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                 </div>
@@ -212,7 +178,7 @@
 
                     </ul>
 
-                    <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                    <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                 </div>
@@ -248,7 +214,7 @@
 
                     </ul>
 
-                    <a class="boton__naranja" href="anuncio.html">Reservar Visita</a>
+                    <a class="boton__naranja" href="anuncio.php">Reservar Visita</a>
 
 
                 </div>
@@ -263,18 +229,4 @@
 
     </main>
 
-    <footer class="footer section">
-        <div class="contenedor contenedor__footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyrigth"> Todos los derechos reservador 2022 &copy;</p>
-    </footer>
-    <script src="js/app.js"></script>
-</body>
-
-</html>
+    <?php incluirTemplates('footer');?>

@@ -160,7 +160,7 @@ img {
     width: 5rem;
 }
 
-.boton__dark__mode {}
+
 
 .boton__dark__mode img {
     width: 5rem;
@@ -250,6 +250,16 @@ img {
     text-align: center;
     padding: 1rem 3rem;
     display: block;
+}
+
+.boton__naranja__inline {
+
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+
 }
 
 
@@ -407,4 +417,45 @@ blockquote:before {
 
 .linea__nosotros {
     background-color: rgb(61, 228, 52);
+}
+
+/*PARA EL CRUD DE ADMIN*/
+
+
+
+
+
+
+
+
+
+
+.formulario fieldset {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    row-gap: .8rem;
+    border: 1px solid #000;
+}
+
+.formulario label {
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+.alerta {
+    margin-bottom: 1rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.alerta_error {
+    background-color: red;
+}
+.alerta_exito {
+    background-color: #47AD18;
 }
